@@ -18,6 +18,8 @@ class AICTGameJam2017Character : public ACharacter
 
 protected:
 
+	virtual void BeginPlay() override;
+
 	/** Called for side to side input */
 	void MoveRight(float Val);
 

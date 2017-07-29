@@ -41,6 +41,11 @@ AICTGameJam2017Character::AICTGameJam2017Character()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
+void AICTGameJam2017Character::BeginPlay()
+{
+
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 

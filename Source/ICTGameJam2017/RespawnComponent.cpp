@@ -15,6 +15,7 @@ void URespawnComponent::BeginPlay()
 	Super::BeginPlay();
 
 	ParentActor = GetOwner();
+	RespawnLocation = ParentActor->GetActorLocation();
 }
 
 
