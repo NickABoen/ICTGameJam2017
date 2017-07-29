@@ -62,7 +62,7 @@ void UCheckpointComponent::OnActorBeginOverlap()
 		}
 	}
 
-	GEngine->AddOnScreenDebugMessage(-1, 0.2f, FColor::White, "Setting respawn position");
+	//GEngine->AddOnScreenDebugMessage(-1, 0.2f, FColor::White, "Setting respawn position");
 
 	if (RespawnComponent != nullptr)
 		RespawnComponent->RespawnLocation = GetOwner()->GetActorLocation() + FVector(0.f, 0.f, ActorRespawnHeightOffset);
