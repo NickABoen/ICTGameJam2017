@@ -26,6 +26,9 @@ AICTGameJam2017Character::AICTGameJam2017Character()
 	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
 	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	SideViewCameraComponent->bUsePawnControlRotation = false; // We don't want the controller rotating the camera
+	//SideViewCameraComponent->SetProjectionMode(ECameraProjectionMode::Orthographic);
+	//SideViewCameraComponent->SetFieldOfView(30.0f);
+
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
@@ -43,7 +46,7 @@ AICTGameJam2017Character::AICTGameJam2017Character()
 
 void AICTGameJam2017Character::BeginPlay()
 {
-
+	Super::BeginPlay();
 }
 
 //////////////////////////////////////////////////////////////////////////
