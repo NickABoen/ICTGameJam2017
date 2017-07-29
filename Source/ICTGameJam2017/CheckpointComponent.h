@@ -26,5 +26,5 @@ public:
 	virtual void OnActorBeginOverlap();
 	
 	UPROPERTY(EditAnywhere)
-	float ActorRespawnHeightOffset : 0.0f; // Might not ever use this?
+	float ActorRespawnHeightOffset; // Might not ever use this?
 };
