@@ -24,12 +24,19 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	UPROPERTY(EditAnywhere,BluePrintReadWrite,meta=(EditCondition=bAllowEdit))
-	FVector RespawnLocation;
+	UFUNCTION(BlueprintCallable)
+	void SetRespawnLocation(const FVector& NewPosition);
 
 	UFUNCTION(BlueprintCallable)
 	void RespawnCharacter();
 
 	AActor* ParentActor;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (EditCondition = bAllowEdit))
+	AActor* PixelEnemy; 
+	
+private:
+
+	FVector RespawnLocation;
+	FVector PixelRespawnLocation;
 };
