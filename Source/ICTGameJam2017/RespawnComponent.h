@@ -24,7 +24,7 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-	UPROPERTY(EditAnywhere,BluePrintReadWrite,meta=(EditCondition=bAllowEdit))
+	UPROPERTY(EditAnywhere,BluePrintReadWrite)
 	FVector RespawnLocation;
 
 	UFUNCTION(BlueprintCallable)
