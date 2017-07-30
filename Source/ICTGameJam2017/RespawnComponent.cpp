@@ -8,6 +8,7 @@
 URespawnComponent::URespawnComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
+	PixelEnemy = nullptr;
 }
 
 
